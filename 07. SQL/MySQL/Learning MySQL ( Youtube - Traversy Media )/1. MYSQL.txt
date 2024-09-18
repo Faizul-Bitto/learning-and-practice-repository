@@ -1,0 +1,52 @@
+Database commands : 
+
+DROP DATABASE database_name;
+DROP TABLE table_name;
+
+SELECT * FROM users; * - ALL
+
+Multiple inerts - 
+
+INSERT INTO users (first_name, last_name, email, password, location, department,  is_admin, register_date) 
+values ('Fred', 'Smith', 'fred@gmail.com', '123456', 'New York', 'design', 0, now()), 
+('Sara', 'Watson', 'sara@gmail.com', '123456', 'New York', 'design', 0, now()),
+('Will', 'Jackson', 'will@yahoo.com', '123456', 'Rhode Island', 'development', 1, now()),
+('Paula', 'Johnson', 'paula@yahoo.com', '123456', 'Massachusetts', 'sales', 0, now()),
+('Tom', 'Spears', 'tom@yahoo.com', '123456', 'Massachusetts', 'sales', 0, now());
+
+
+
+
+
+
+WHERE clause :
+
+SELECT * FROM users WHERE location = 'Massachusetts';
+
+SELECT * FROM users WHERE location = 'Massachusetts' AND department = 'sales';
+
+SELECT * FROM users WHERE is_admin > 0;
+
+
+
+
+
+Updating :
+
+Deleting row : DELETE FROM users WHERE id = 6;
+
+UPDATE users SET email = 'freddy@gmail.com' WHERE id = 2;
+
+
+
+
+
+Alter: 
+
+ADD a new column:
+
+ALTER TABLE user ADD age VARCHAR(3);
+
+Modify - varchar to int:
+
+ALTER TABLE users MODIFY COLUMN age INT(3);
