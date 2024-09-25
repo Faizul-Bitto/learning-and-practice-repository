@@ -1,0 +1,22 @@
+h1{
+    color: red;
+}
+
+.my-class{
+    color: blue;
+    font-size: 100px;
+}
+
+#my-text{
+    color: green;
+    font-size: 50px;
+} */
+
+* {
+    color: rgb(0, 30, 255);
+}
+
+h1, p{
+    color: #fffb00;
+    font-size: 50px;
+}

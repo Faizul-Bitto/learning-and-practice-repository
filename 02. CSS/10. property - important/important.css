@@ -1,0 +1,16 @@
+.btn {
+    background-color: burlywood;
+    color: aqua !important;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* will work with this class */
+.btn {
+    background-color: rgb(189, 222, 135);
+    color: green;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}

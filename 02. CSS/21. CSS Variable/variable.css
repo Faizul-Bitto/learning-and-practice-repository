@@ -1,0 +1,11 @@
+:root{
+    --color: blue;
+    --font: Primary:20px;
+    --font-size: 40px;
+}
+
+p{
+    color: var(--color);
+    font-family: var(--font);
+    font-size: var(--font-size);
+}
