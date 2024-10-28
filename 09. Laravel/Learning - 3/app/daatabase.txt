@@ -1,0 +1,215 @@
+php artisan make:migration create_users
+php artisan make:migration create_profiles
+php artisan make:migration create_categories
+php artisan make:migration create_brands
+php artisan make:migration create_products
+php artisan make:migration create_product_details
+php artisan make:migration create_product_sliders
+php artisan make:migration create_product_reviews
+php artisan make:migration create_product_wishes 
+php artisan make:migration create_product_carts 
+
+
+
+        Schema::create( 'users', function ( Blueprint $table )
+        {
+            $table->id();
+            $table->string( 'email', 50 )->unique();
+            $table->string( 'otp', 10 );
+            $table->timestamps();
+        } );
+
+
+        Schema::create( 'profiles', function ( Blueprint $table )
+        {
+            $table->id();
+            $table->string( 'firstName', 50 );
+            $table->string( 'lastName', 50 );
+            $table->string( 'mobile', 11 )->unique();
+            $table->string( 'city', 10 );
+            $table->string( 'shippingAddress', 1000 );
+            $table->string( 'email', 50 )->unique();
+
+            $table->foreign( 'email' )->references( 'email' )->on( 'users' )
+                ->restrictOnDelete()
+                ->cascadeOnUpdate();
+
+            $table->timestamps();
+        } );
+
+
+        Schema::create( 'categories', function ( Blueprint $table )
+        {
+            $table->id();
+            $table->string( 'categoryName', 50 );
+            $table->string( 'categoryImage', 300 );
+            $table->timestamps();
+        } );
+
+
+        Schema::create( 'brands', function ( Blueprint $table )
+        {
+            $table->id();
+            $table->string( 'brandName', 50 );
+            $table->string( 'brandImage', 300 );
+            $table->timestamps();
+        } );
+
+
+        Schema::create( 'products', function ( Blueprint $table )
+        {
+            $table->id();
+            $table->string( 'title', 200 );
+            $table->string( 'shortDescription', 500 );
+            $table->string( 'price' );
+            $table->boolean( 'discount' );
+            $table->string( 'discountPrice', 50 );
+            $table->string( 'image', 200 );
+            $table->boolean( 'stock' );
+            $table->float( 'star' );
+            $table->enum( 'remark', ['new', 'hot', 'sale', 'popular', 'top'] );
+
+            // foreign key declare
+            $table->unsignedBigInteger( 'category_id' );
+            $table->unsignedBigInteger( 'brand_id' );
+
+            // relationship establish
+            $table->foreign( 'category_id' )
+                ->references( 'id' )
+                ->on( 'categories' )
+                ->restrictOnDelete()
+                ->cascadeOnUpdate();
+
+            $table->foreign( 'brand_id' )
+                ->references( 'id' )
+                ->on( 'brands' )
+                ->restrictOnDelete()
+                ->cascadeOnUpdate();
+
+            $table->timestamps();
+        } );
+
+
+        Schema::create( 'product_details', function ( Blueprint $table )
+        {
+            $table->id();
+            $table->string( 'img1', 200 );
+            $table->string( 'img2', 200 );
+            $table->string( 'img3', 200 );
+            $table->string( 'img4', 200 );
+            $table->longText( 'description' );
+            $table->string( 'color', 50 );
+            $table->string( 'size', 50 );
+
+            // foreign key declare
+            $table->unsignedBigInteger( 'product_id' )->unique();
+
+            // relationship establish
+            $table->foreign( 'product_id' )
+                ->references( 'id' )
+                ->on( 'products' )
+                ->restrictOnDelete()
+                ->cascadeOnUpdate();
+
+            $table->timestamps();
+        } );
+
+
+        Schema::create( 'product_sliders', function ( Blueprint $table )
+        {
+            $table->id();
+            $table->string( 'title', 200 );
+            $table->string( 'shortDescription', 500 );
+            $table->string( 'image', 200 );
+
+            // foreign key declare
+            $table->unsignedBigInteger( 'product_id' )->unique();
+
+            // relationship establish
+            $table->foreign( 'product_id' )
+                ->references( 'id' )
+                ->on( 'products' )
+                ->restrictOnDelete()
+                ->cascadeOnUpdate();
+
+            $table->timestamps();
+        } );
+
+
+        Schema::create( 'product_reviews', function ( Blueprint $table )
+        {
+            $table->id();
+            $table->string( 'description', 1000 );
+            $table->string( 'email', 50 );
+
+            // foreign key declare
+            $table->unsignedBigInteger( 'product_id' );
+
+            $table->foreign( 'email' )
+                ->references( 'email' )
+                ->on( 'profiles' )
+                ->restrictOnDelete()
+                ->cascadeOnUpdate();
+
+            $table->foreign( 'product_id' )
+                ->references( 'id' )
+                ->on( 'products' )
+                ->restrictOnDelete()
+                ->cascadeOnUpdate();
+
+            $table->timestamps();
+        } );
+
+
+        Schema::create( 'product_wishes', function ( Blueprint $table )
+        {
+            $table->id();
+
+            $table->string( 'email', 50 );
+            $table->unsignedBigInteger( 'product_id' );
+
+            // Relationship establish
+            $table->foreign( 'email' )
+                ->references( 'email' )
+                ->on( 'profiles' )
+                ->restrictOnDelete()
+                ->cascadeOnUpdate();
+
+            $table->foreign( 'product_id' )
+                ->references( 'id' )
+                ->on( 'products' )
+                ->restrictOnDelete()
+                ->cascadeOnUpdate();
+
+            $table->timestamps();
+        } );
+
+
+        Schema::create( 'product_carts', function ( Blueprint $table )
+        {
+            $table->id();
+
+            $table->string( 'email', 50 );
+            $table->unsignedBigInteger( 'product_id' );
+
+            $table->string( 'color', 50 );
+            $table->string( 'size', 50 );
+
+            // Relationship establish
+            $table->foreign( 'email' )
+                ->references( 'email' )
+                ->on( 'profiles' )
+                ->restrictOnDelete()
+                ->restrictOnUpdate();
+
+            $table->foreign( 'product_id' )
+                ->references( 'id' )
+                ->on( 'products' )
+                ->restrictOnDelete()
+                ->restrictOnUpdate();
+
+            $table->timestamps();
+        } );
+
+
+
