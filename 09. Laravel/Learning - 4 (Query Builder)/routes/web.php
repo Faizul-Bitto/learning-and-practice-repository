@@ -33,3 +33,5 @@ Route::post( '/27/{id}', [DemoController::class, 'updateOrInsertMethod'] );
 Route::post( '/28/{id}', [DemoController::class, 'incrementMethod'] );
 Route::post( '/29/{id}', [DemoController::class, 'decrementMethod'] );
 Route::delete( '/30/{id}', [DemoController::class, 'deleteMethod'] );
+Route::get( '/31', [DemoController::class, 'paginationMethod'] );
+Route::get( '/32', [DemoController::class, 'customPaginationMethod'] );

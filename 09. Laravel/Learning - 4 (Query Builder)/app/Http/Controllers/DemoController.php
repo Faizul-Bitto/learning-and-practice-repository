@@ -349,9 +349,24 @@ class DemoController extends Controller
         return $result;
     }
 
-    public function pagination()
+    public function paginationMethod()
     {
+        $result = DB::table( 'categories' )
+            ->simplePaginate( 5 );
 
+        return $result;
+    }
+
+    public function customPaginationMethod()
+    {
+        $perPage  = 5;
+        $pageName = 'item';
+        $column   = ['*']; // * means all columns, we can define particular column also
+
+        $result = DB::table( 'categories' )
+            ->paginate( $perPage, $column, $pageName );
+
+        return $result;
     }
 
 }
