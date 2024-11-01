@@ -349,4 +349,9 @@ class DemoController extends Controller
         return $result;
     }
 
+    public function pagination()
+    {
+
+    }
+
 }
