@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>.pop() method</title>
+  </head>
+  <body>
+    <script>
+      const array = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+
+      /**
+      .pop() method : It will remove the last element from the array
+      pop syntax: 
+      arrayVariableName.pop();
+      **/
+      const result1 = array.pop();
+      const result2 = array.pop();
+
+      document.write(result1 + "<br />"); // the element that deleted
+      document.write(result2 + "<br />"); // the element that deleted
+
+      document.write(array); // [10, 20, 30, 40, 50, 60, 70, 80, 90] new array
+    </script>
+  </body>
+</html>

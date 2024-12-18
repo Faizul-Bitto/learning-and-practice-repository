@@ -22,6 +22,31 @@ class DemoController extends Controller
         return User::with( 'category', 'customer', 'product' )->get();
     }
 
+    public function dataGetAll()
+    {
+        return User::all();
+    }
+
+    public function onlyOneRow()
+    {
+        return User::first();
+    }
+
+    public function findMethod()
+    {
+        return User::find( 2 );
+    }
+
+    public function retrievingListOfColumns()
+    {
+        return User::pluck( 'firstName' );
+    }
+
+    public function retrievingListOfColumnsWithKeyDefining()
+    {
+        return User::pluck( 'firstName', 'id' );
+    }
+
     public function dataGetCategories()
     {
         return Category::with( 'user' )->get();
@@ -78,12 +103,46 @@ class DemoController extends Controller
             ->update( $data );
     }
 
+    public function updateOrCreateMethod( Request $request )
+    {
+        $attributes = [
+            'firstName' => $request->firstName,
+        ];
+
+        $data = User::updateOrCreate(
+            $attributes,
+            $request->input()
+        );
+
+        return $data;
+    }
+
     public function dataDelete( Request $request )
     {
         $id = $request->id;
 
         return User::where( 'id', '=', $id )
             ->delete();
+    }
+
+    public function incrementMethod( Request $request )
+    {
+        $id = $request->id;
+
+        $result = Product::where( 'id', '=', $id )
+            ->increment( 'price', 500 );
+
+        return $result;
+    }
+
+    public function decrementMethod( Request $request )
+    {
+        $id = $request->id;
+
+        $result = Product::where( 'id', '=', $id )
+            ->decrement( 'price', 300 );
+
+        return $result;
     }
 
 }

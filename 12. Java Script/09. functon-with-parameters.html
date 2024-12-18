@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Java Script</title>
+  </head>
+  <body>
+    <script>
+      // function with parameters
+      function add(a, b) {
+        let c = a + b;
+        console.log(c);
+      }
+
+      add(10, 20);
+
+      // function with indefinite number of parameters
+      const numbers = (...args) => {
+        console.log(args);
+      };
+
+      numbers(10, 20, 30, 40, 50, 60, 70, 80); // output: [10, 20, 30, 40, 50, 60, 70, 80] as an array
+
+      // function return
+      const addition = (...args) => {
+        let sum = 0;
+        for (let i = 0; i < args.length; i++) {
+          sum += args[i];
+        }
+        return sum;
+      };
+
+      console.log(addition(10, 20, 30, 40, 50, 60, 70, 80));
+    </script>
+  </body>
+</html>

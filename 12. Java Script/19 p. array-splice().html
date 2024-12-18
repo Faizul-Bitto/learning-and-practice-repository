@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>splice() method</title>
+  </head>
+  <body>
+    <script>
+      const array = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+
+      /**
+      .splice() method : It will remove the elements from the array from the given starting index to the number of elements that we want to remove, even we can add the elements to the array
+      splice syntax: 
+      arrayVariableName.splice(startingIndexThatWillBeRemoved, removeTheNumberOfElementsWeWantFromGivenStartingIndex);
+      splice can take multiple parameters:
+      arrayVariableName.splice(startingIndexThatWillBeRemoved, removeTheNumberOfElementsWeWantFromGivenStartingIndex, itemsToBeAddedIfWeWant, itemsToBeAddedIfWeWant, itemsToBeAddedIfWeWant...);
+      **/
+
+      // (2 parameters) let's say we want to remove 60 from the array which is on index 5
+      const spliceMethod = array.splice(5, 2); // for starting index we are giving 5 and for number of elements we are giving 2, that means we are removing 2 elements from index 5 and this variable holding the spliced
+      document.write(`${spliceMethod} are replaced <br />`); // [60, 70]
+      document.write(array + "<br />"); // updated array : [10, 20, 30, 40, 50, 80, 90, 100]
+
+      // (multiple parameters) for adding elements to the array
+      const array1 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+      const spliceMethod1 = array1.splice(5, 2, 55, 65, 75); // for starting index we are giving 5 and for number of elements we are giving 2 and for adding elements we are giving 55, 66 and 77. So one the index 5, and for number of elements we are giving 2, on the value of 60 and 70, we are adding 55, 66 and 77, that means 60 will be replaced by 55, 66 and 77
+      document.write(`${spliceMethod1} are replaced <br />`); // [60, 70]
+      document.write(array1 + "<br />"); // updated array : [10, 20, 30, 40, 50, 55, 66, 77, 80, 90, 100]
+
+      const array2 = [10, 20, 30, 40, 50, 80, 90, 100];
+      const spliceMethod2 = array2.splice(5, 0, 55, 65, 75); // for starting index we are giving 5 and for number of elements we are giving 0 and for adding elements we are giving 55, 66 and 77. So one the index 5, and for number of elements we are giving 0, before the value of 80, we are adding 55, 66 and 77
+      document.write(array2 + "<br />"); // updated array : [10, 20, 30, 40, 50, 55, 66, 77, 80, 90, 100]
+    </script>
+  </body>
+</html>

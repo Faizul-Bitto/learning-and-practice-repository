@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array finding->(.find())</title>
+  </head>
+  <body>
+    <script>
+      const array = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+
+      /**
+      .find() method : Will find and return that only one value inside an array, based on the condition (for these conditions (< / <=), that will be the first value in that array, for another condition (>) that will be the exact next value and for another condition (>=) that will return the same value in that array)      
+      finding syntax: 
+      arrayVariableName.find((element) => {
+        statement
+      });
+      **/
+      const findElement1 = array.find((element) => {
+        return element < 100; // will return only first value 10
+      });
+
+      const findElement2 = array.find((element) => {
+        return element <= 100; // will return only first value 10
+      });
+
+      const findElement3 = array.find((element) => {
+        return element > 30; // will return only next value 40
+      });
+
+      const findElement4 = array.find((element) => {
+        return element >= 30; // will return the same value 30
+      });
+
+      document.write(findElement1 + "<br />");
+      document.write(findElement2 + "<br />");
+      document.write(findElement3 + "<br />");
+      document.write(findElement4 + "<br />");
+    </script>
+  </body>
+</html>
