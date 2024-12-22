@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/milligram.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <label>Product Name</label>
+          <input id="ProductName" type="text" />
+          <label>Product Code</label>
+          <input id="ProductCode" type="text" />
+          <label>Product Image</label>
+          <input id="Img" type="text" />
+          <label>Unit Price</label>
+          <input id="UnitPrice" type="text" />
+          <label>Product Qty</label>
+          <input id="Quantity" type="text" />
+          <label>Product Total</label>
+          <input id="TotalPrice" type="text" />
+          <button onclick="createData()">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/axios.min.js"></script>
+
+    <script>
+      async function createData() {
+        const productName = document.getElementById("ProductName").value; // getting the value from the input
+        const productCode = document.getElementById("ProductCode").value; // getting the value from the input
+        const img = document.getElementById("Img").value; // getting the value from the input
+        const unitPrice = document.getElementById("UnitPrice").value; // getting the value from the input
+        const quantity = document.getElementById("Quantity").value; // getting the value from the input
+        const totalPrice = document.getElementById("TotalPrice").value; // getting the value from the input
+
+        // creating an object, key and value. Key should be exact same as the database column name
+        const object = {
+          ProductName: productName,
+          ProductCode: productCode,
+          Img: img,
+          UnitPrice: unitPrice,
+          Qty: quantity,
+          TotalPrice: totalPrice,
+        };
+
+        const url = "https://crud.teamrabbil.com/api/v1/CreateProduct"; // picking the URL first from the API
+
+        const response = await axios.post(url, object); // storing the response in a variable
+
+        window.location = "index.html"; // after creating the data, it will redirect to the index page
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>.indexOf() method</title>
+  </head>
+  <body>
+    <script>
+      const array = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+
+      /**
+      .indexOf() method : It helps to find, if an element exists in the array or not, like .includes() method, it will also check if there exists the passing value in the array, if exists then it will return the index of that value. if it finds then it will return the index of that value, if not then it will return -1
+      indexOf syntax: 
+      arrayVariableName.indexOf(element);
+      **/
+      const result1 = array.indexOf(100);
+      const result2 = array.indexOf(110);
+
+      document.write(result1 + "<br />");
+      document.write(result2);
+    </script>
+  </body>
+</html>
