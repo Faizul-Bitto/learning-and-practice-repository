@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>object cloning</title>
+  </head>
+  <body>
+    <script>
+      const person = {
+        name: "John",
+        age: 30,
+        city: "New York",
+      };
+
+      // if we do this for object cloning : const person2 = person;
+      // const person2 = person;
+      // person2.name = "Jane"; // it will even replace person's name so all will be manipulated
+
+      document.write(person.name + "<br />");
+      // document.write(person2.name + "<br />");
+
+      // instead if want just a clone of the object, without replacing the original object, we can do like this:
+      const person3 = Object.assign({}, person);
+
+      person3.name = "Jane"; //  now it won't interfere with the original object
+
+      document.write(person3.name + "<br />"); // Jane
+    </script>
+  </body>
+</html>

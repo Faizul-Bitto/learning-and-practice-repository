@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>split(), reverse(), join() method</title>
+  </head>
+  <body>
+    <script>
+      /**
+       * split() method : It will split the string into an array
+       * split syntax: stringName.split("")
+       * join() method : It will join the array into a string
+       * join syntax: arrayName.join("")
+       * reverse() method : It will reverse the string
+       * reverse syntax: stringName.reverse()
+       **/
+      function reverseString(string) {
+        const splitted = string.split(""); // It will first split the string into an array
+        document.write(splitted + "<br />");
+
+        const reversed = splitted.reverse(); // It will reverse the array
+        document.write(reversed + "<br />");
+
+        const joinedAgain = reversed.join(""); // It will join the reversed array into a string
+
+        return joinedAgain; // It will return the reversed string
+      }
+
+      document.write(reverseString("Hello"));
+    </script>
+  </body>
+</html>

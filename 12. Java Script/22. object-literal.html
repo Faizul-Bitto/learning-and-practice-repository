@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template Literal</title>
+  </head>
+  <body>
+    <script>
+      const name = "John";
+      const age = 25;
+
+      // assign the variables in a object variable, just write the keys, also for function, just write the function, no need any keyword like 'function'
+      const person = {
+        name,
+        age,
+
+        sayHello() {
+          return "Hello";
+        },
+      };
+
+      document.write(
+        `${person.sayHello()}, my name is ${person.name} and I am ${
+          person.age
+        } years old.`
+      );
+    </script>
+  </body>
+</html>

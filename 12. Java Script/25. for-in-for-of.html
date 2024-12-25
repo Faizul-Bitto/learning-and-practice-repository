@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>for in and for of loop</title>
+  </head>
+  <body>
+    <script>
+      /**
+       * for in loop basically handles indexes, so for 'for in' we get indexes and from indexes we have to get the values
+       * for of loop basically handles values. But for 'for of' loop, we directly get the values only, so no need to handle indexes
+       **/
+
+      // for in loop in array
+      const cities = ["New York", "London", "Tokyo", "Paris"];
+
+      for (city in cities) {
+        document.write(city + "<br />");
+        document.write(
+          cities[city] + "<br />" + "<br />" + "<br />" + " <br />"
+        );
+      }
+
+      // for in loop in object
+      const persons = {
+        name1: "John",
+        name2: "Jane",
+        name3: "Jack",
+        name4: "Jill",
+      };
+
+      for (person in persons) {
+        document.write(person + "<br />");
+        document.write(persons[person] + "<br />" + "<br />");
+      }
+
+      // for of loop in array
+      for (city of cities) {
+        document.write(city + "<br />" + "<br />");
+      }
+
+      // for of loop in object
+      for (person of persons) {
+        document.write(persons[person] + "<br />" + "<br />");
+      }
+    </script>
+  </body>
+</html>
