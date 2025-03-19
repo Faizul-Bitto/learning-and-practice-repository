@@ -1,0 +1,20 @@
+.test{
+    display: flex;
+    /* will spread with same space, from the very beginning and ending */
+    justify-content: space-evenly;
+
+    /* will start from left altogether */
+    /* justify-content: flex-start; */
+
+    /* will start from right */
+    /* justify-content: flex-end; */
+
+    /* will be at center altogether */
+    /* justify-content: center; */
+
+    /* will spread in the middle of taken spaces between the contents */
+    /* justify-content: space-around; */
+
+    /* same as space-evenly */
+    /* justify-content: space-between; */
+}

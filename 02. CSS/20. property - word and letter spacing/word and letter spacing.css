@@ -1,0 +1,13 @@
+p{
+    color: blue;
+}
+
+p.a{
+    letter-spacing: 10px;
+    /* letter-spacing: -10px; */
+}
+
+p.b{
+    word-spacing: 50px;
+    /* word-spacing: -50px; */
+}

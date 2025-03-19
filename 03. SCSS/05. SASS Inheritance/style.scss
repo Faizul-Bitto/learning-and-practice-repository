@@ -1,0 +1,15 @@
+.button-base-style{
+    border: 5px solid black;
+    border-radius: 5px;
+    color: white;
+}
+
+.button-primary{
+    @extend .button-base-style;
+    background-color: blue;
+}
+
+.button-secondary{
+    @extend .button-base-style;
+    background-color: red;      
+}

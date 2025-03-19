@@ -1,0 +1,19 @@
+p{
+    height: 300px;
+    width: 300px;
+    /* overflow hidden means it will not show any content further 300px, as height and width mentioned are 300px */
+    /* overflow: hidden; */
+
+    /* overflow auto means it will show scroll bar if content is more than 300px */
+    overflow: auto;
+    /* will also work with scroll; */
+    /* overflow: scroll; */
+}
+
+div{
+    height: 600px;
+    width: 400px;
+
+    overflow-y: scroll;
+    overflow-x: scroll;
+}

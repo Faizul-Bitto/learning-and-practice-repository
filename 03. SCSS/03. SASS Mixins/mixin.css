@@ -1,0 +1,41 @@
+.btn-1 {
+  border: 2px solid red;
+  color: #fff;
+  padding: 40px 50px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: blue;
+  cursor: grab;
+}
+
+.btn-2 {
+  border: 2px solid red;
+  color: #fff;
+  padding: 40px 50px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: rgb(0, 217, 255);
+  cursor: pointer;
+}
+
+.btn-3 {
+  border: 2px solid red;
+  color: #fff;
+  padding: 40px 50px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: yellow;
+  cursor: not-allowed;
+}
+
+.btn-4 {
+  border: 2px solid red;
+  color: #fff;
+  padding: 40px 50px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: red;
+  cursor: zoom-in;
+}
+
+/*# sourceMappingURL=mixin.css.map */

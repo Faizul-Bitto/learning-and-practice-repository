@@ -1,0 +1,18 @@
+@import "variable";
+@import "mixin";
+
+.btn-1{
+    @include btn-default-style($primary-color, grab);
+}
+
+.btn-2 {
+    @include btn-default-style($secondary-color, pointer);
+}
+
+.btn-3 {
+    @include btn-default-style($warning-color, not-allowed);
+}
+
+.btn-4 {
+    @include btn-default-style($danger-color, zoom-in);
+}

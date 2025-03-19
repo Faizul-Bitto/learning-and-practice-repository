@@ -1,0 +1,9 @@
+@mixin btn-default-style($background-color, $cursor) {
+    border: 2px solid $danger-color;
+    color: #fff;
+    padding: 40px 50px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: $background-color;
+    cursor: $cursor;
+}

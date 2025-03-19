@@ -1,0 +1,4 @@
+p{  
+    /* block, inline, inline-block, inline-flexbox, none, flex, inline-flex, grid, inline-grid etc. */
+    display: inline-block;
+}

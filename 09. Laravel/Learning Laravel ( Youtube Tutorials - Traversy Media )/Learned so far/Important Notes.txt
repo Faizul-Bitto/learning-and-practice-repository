@@ -1,0 +1,6 @@
+public folder to take assests, like images and etc.
+
+
+<!--I was typing $listing and it was showing error/undefined. Thats because in route I defined it with list-->
+
+So always check what variable was defined if we get this error.
