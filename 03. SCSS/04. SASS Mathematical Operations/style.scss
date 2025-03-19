@@ -1,7 +1,0 @@
-$default-font-size: 16px;
-
-@for $i from 1 through 10{
-    .text-#{$i} {
-        font-size: $default-font-size + $i;
-    }
-}
