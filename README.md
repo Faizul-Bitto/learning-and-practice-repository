@@ -1,0 +1,1 @@
+This repository is a collection of practice codes across different domains, including web development, backend development, and more. It is primarily intended for personal use, and the codes here may vary in complexity and completeness. Each branch holding each frameworks learnings.
