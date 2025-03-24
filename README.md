@@ -20,9 +20,5 @@
 <h2>📂 Structure</h2>
 <p>Each branch represents a different framework or technology I'm exploring.</p>
 
-<h2>💡 Note</h2>
-<p>This repository is a work in progress, and contributions are not expected as it serves as a personal learning space.</p>
-
 <hr>
 <p align="center">✨ Keep Learning, Keep Coding! ✨</p>
-
