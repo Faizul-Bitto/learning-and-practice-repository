@@ -22,6 +22,5 @@ const weekDay = true;
         It's a weekday
       </div>
     </section>
-
   </section>
 </template>
