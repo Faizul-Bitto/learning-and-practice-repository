@@ -1,30 +1,27 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+const bgOrange = 'bg-orange-500';
+const bgIndigo = 'bg-indigo-500';
+const bgGreen = 'bg-green-500';
+
+const weekDay = true;
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
-</template>
+  <section class="container mx-auto">
+    <h1 class="text-center text-3xl py-12">CSS Class and Style Binding</h1>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+    <section class="flex space-x-10">
+      <div class="w-1/3 h-16" :class="bgOrange"></div>
+      <div class="w-1/3 h-16" :class="bgIndigo"></div>
+      <div class="w-1/3 h-16" :class="bgGreen"></div>
+    </section>
+
+    <section class="mt-10">
+      <div class="bg-red-600 h-16 flex items-center justify-center text-white"
+        :class="[weekDay ? 'bg-green-600' : 'bg-red-600', weekDay ? 'text-4xl' : 'text-6xl']">
+        It's a weekday
+      </div>
+    </section>
+
+  </section>
+</template>
