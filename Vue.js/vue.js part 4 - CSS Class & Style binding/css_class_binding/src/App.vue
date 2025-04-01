@@ -1,11 +1,11 @@
 <script setup>
-const bgOrange = 'bg-orange-500';
-const bgIndigo = 'bg-indigo-500';
-const bgGreen = 'bg-green-500';
-
 const weekDay = true;
 
 const messageType = 'error';
+
+const bgOrange = 'bg-orange-500';
+const bgIndigo = 'bg-indigo-500';
+const bgGreen = 'bg-green-500';
 
 const colors1 = {
   bgColor: 'bg-teal-100',
