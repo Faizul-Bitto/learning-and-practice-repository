@@ -35,7 +35,8 @@ if ( 'error' == messageType ) {
     </section>
 
     <section class="mt-10">
-      <!-- <div class="h-16 flex items-center justify-center text-white" :style="weekday==true?[bgRed,'font-size:20px']:[bgDarkGreen, 'font-size:30px']"> -->
+      <!-- <div class="h-16 flex items-center justify-center text-white"
+        :style="weekday == true ? [bgRed, 'font-size:20px'] : [bgDarkGreen, 'font-size:30px']"> -->
       <div class="h-16 flex items-center justify-center text-white"
         :style="[weekday == true ? bgRed : bgDarkGreen, weekday ? 'font-size:20px' : 'font-size:30px']">
         It's a weekday!

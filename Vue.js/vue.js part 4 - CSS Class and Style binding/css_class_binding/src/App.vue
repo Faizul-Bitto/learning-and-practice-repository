@@ -36,5 +36,13 @@ if ( 'error' == messageType ) {
         It's a weekday
       </div>
     </section>
+
+    <section class="mt-10">
+      <div class=" border-t-4 rounded-b px-4 py-3 shadow-md"
+        :class="[colors.bgColor, colors.borderColor, colors.textColor]">
+        <p class="font-bold">Our privacy policy has changed</p>
+        <p class="text-sm">Make sure you know how these changes affect you.</p>
+      </div>
+    </section>
   </section>
 </template>
