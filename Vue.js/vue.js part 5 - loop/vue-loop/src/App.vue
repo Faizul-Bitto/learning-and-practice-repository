@@ -50,6 +50,13 @@ const persons = [
     jobTitle: "COO",
   }
 ];
+
+const weatherIcons = [
+  { title: "Sunny", icon: "https://creazilla-store.fra1.digitaloceanspaces.com/icons/7911203/weather-icon-md.png" },
+  { title: "Partly Cloudy", icon: "https://creazilla-store.fra1.digitaloceanspaces.com/icons/7912718/weather-icon-md.png" },
+  { title: "Rainy", icon: "https://creazilla-store.fra1.digitaloceanspaces.com/icons/7913380/weather-icon-md.png" },
+  { title: "Thunderstorm", icon: "https://creazilla-store.fra1.digitaloceanspaces.com/icons/7912589/weather-icon-md.png" },
+];
 </script>
 
 <template>
@@ -127,7 +134,7 @@ const persons = [
 
 
 
-  <!--! display images and other contents with loop -->
+  <!--! display images and other items with loop -->
   <section class="mx-auto container flex items-center text-center flex-col space-y-2 border border-red-600 p-5 mt-20">
 
     <section class="mx-auto container space-y-3">
@@ -158,6 +165,27 @@ const persons = [
 
         </div>
       </div>
+
+    </section>
+
+  </section>
+
+
+
+
+  <!--! grouping items with template tag with loop -->
+  <section class="mx-auto container m-20 p-10 border border-red-600">
+
+    <h2 class="mb-4 text-center text-2xl text-gray-900 font-bold text-4xl p-5">
+      Weather Icons
+    </h2>
+
+    <section class="mx-auto container space-y-3 p-5 border border-gray-500 w-80 flex flex-col items-center">
+
+      <template v-for="weatherIcon in weatherIcons" :key="weatherIcon.icon">
+        <h2 class="text-2xl">{{ weatherIcon.title }}</h2>
+        <img class="w-32" :src="weatherIcon.icon" :alt="weatherIcon.title">
+      </template>
 
     </section>
 
