@@ -32,7 +32,7 @@ if ( 'error' == messageType ) {
 
     <section class="mt-10">
       <div class="bg-red-600 h-16 flex items-center justify-center text-white"
-        :class="[weekDay ? 'bg-green-600' : 'bg-red-600', weekDay ? 'text-4xl' : 'text-6xl']">
+        :class="[weekDay ? 'bg-green-600' : 'bg-red-600', weekDay == true ? 'text-4xl' : 'text-6xl']">
         It's a weekday
       </div>
     </section>
