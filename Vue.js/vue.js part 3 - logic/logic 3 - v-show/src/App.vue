@@ -1,31 +1,30 @@
 <script setup>
+const location = "Dhaka";
+const weather = "sunny";
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+
+  <section class="container mx-auto flex items-center flex-col">
+
+    <h1 class="text-center text-2xl py-10">Logic in Vue.js</h1>
+
+    <div class="w-1/3 p-10 flex items-center flex-col space-y-10">
+      <h1 class="text-3xl">Location : {{ location }}</h1>
+
+      <h2 class="text-2xl" v-show="weather == 'sunny'">Weather : Sunny</h2>
+      <h2 class="text-2xl" v-show="weather == 'partly cloudy'">Weather : Partly Cloudy</h2>
+      <h2 class="text-2xl" v-show="weather == 'rainy'">Weather : Rainy</h2>
+      <h2 class="text-2xl" v-show="weather == 'thunderstorm'">Weather : Thunderstorm</h2>
+
+      <img v-show="weather == 'sunny'" src=" ../src/assets/images/sun.png" alt="">
+      <img v-show="weather == 'partly cloudy'" src="../src/assets/images/cloudy.png" alt="">
+      <img v-show="weather == 'rainy'" src="../src/assets/images/rainy.png" alt="">
+      <img v-show="weather == 'thunderstorm'" src="../src/assets/images/storm.png" alt="">
+    </div>
+
+  </section>
+
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+<style scoped></style>
