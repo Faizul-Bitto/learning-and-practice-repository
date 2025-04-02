@@ -41,6 +41,7 @@ function changeLocation3 ( newLocation3 ) {
     <h1 class="text-center text-2xl py-10">
       Events & Reactivity in Vue.js (part 1)
     </h1>
+
     <div class="container mx-auto flex space-x-5 justify-center m-5">
       <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
         @click="changeLocation1('Dhaka')">
@@ -69,6 +70,7 @@ function changeLocation3 ( newLocation3 ) {
     <h1 class="text-center text-2xl py-10">
       Events & Reactivity in Vue.js <u><b>with ref() method</b></u> for single value (part 2)
     </h1>
+
     <div class="container mx-auto flex space-x-5 justify-center m-5">
       <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
         @click="changeLocation2('Dhaka')">
@@ -97,6 +99,7 @@ function changeLocation3 ( newLocation3 ) {
     <h1 class="text-center text-2xl py-10">
       Events & Reactivity in Vue.js <u><b>with reactive() method</b></u> for object (part 3)
     </h1>
+
     <div class="container mx-auto flex space-x-5 justify-center m-5">
       <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
         @click="changeLocation3('Dhaka')">
