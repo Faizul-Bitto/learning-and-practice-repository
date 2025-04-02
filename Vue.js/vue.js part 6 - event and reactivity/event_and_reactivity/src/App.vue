@@ -37,6 +37,7 @@ function changeLocation3 ( newLocation3 ) {
   <!--! this is not reactive -->
 
   <section class="container mx-auto flex items-center flex-col">
+
     <h1 class="text-center text-2xl py-10">Events & Reactivity in Vue.js (part 1)</h1>
     <div class="container mx-auto flex space-x-5 justify-center m-5">
       <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
@@ -54,6 +55,7 @@ function changeLocation3 ( newLocation3 ) {
     </div>
     <h1 class="text-2xl m-10">Current Location is {{ location1 }}</h1>
   </section>
+
   <hr>
 
 
@@ -61,6 +63,7 @@ function changeLocation3 ( newLocation3 ) {
   <!--! now let's make it reactive a single value with 'ref()' -->
 
   <section class="container mx-auto flex items-center flex-col">
+
     <h1 class="text-center text-2xl py-10">Events & Reactivity in Vue.js <u><b>with ref() method</b></u> for single
       value (part
       2)
@@ -80,6 +83,7 @@ function changeLocation3 ( newLocation3 ) {
       </button>
     </div>
     <h1 class="text-2xl m-10">Current Location is {{ location2 }}</h1>
+
   </section>
   <hr>
 
@@ -88,6 +92,7 @@ function changeLocation3 ( newLocation3 ) {
   <!--! now let's make it reactive a single value with 'reactive()' -->
 
   <section class="container mx-auto flex items-center flex-col">
+
     <h1 class="text-center text-2xl py-10">Events & Reactivity in Vue.js <u><b>with reactive() method</b></u> for object
       (part
       3)</h1>
@@ -106,6 +111,7 @@ function changeLocation3 ( newLocation3 ) {
       </button>
     </div>
     <h1 class="text-2xl m-10">Current Location is {{ location3.name }}</h1>
+
   </section>
 
 </template>
