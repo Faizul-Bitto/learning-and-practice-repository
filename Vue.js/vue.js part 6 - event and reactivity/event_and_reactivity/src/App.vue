@@ -14,7 +14,7 @@ const location2 = ref( 'Dhaka' );
 
 function changeLocation2 ( newLocation2 ) {
   alert( `Button Clicked ${ newLocation2 }` );
-  location2.value = newLocation2;
+  location2.value = newLocation2; // for using ref() method, we need to must write .value to change the value
 };
 
 // now let's make it reactive a object with 'reactive()'
