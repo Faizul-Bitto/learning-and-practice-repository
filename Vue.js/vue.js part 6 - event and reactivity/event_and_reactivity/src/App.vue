@@ -54,8 +54,8 @@ function changeLocation3 ( newLocation3 ) {
       </button>
     </div>
     <h1 class="text-2xl m-10">Current Location is {{ location1 }}</h1>
-  </section>
 
+  </section>
   <hr>
 
 
