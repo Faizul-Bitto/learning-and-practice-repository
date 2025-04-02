@@ -39,7 +39,7 @@ function changeLocation3 ( newLocation3 ) {
   <section class="container mx-auto flex items-center flex-col">
 
     <h1 class="text-center text-2xl py-10">
-      Events & Reactivity in Vue.js (part 1)
+      Events & Reactivity in Vue.js (part-1)
     </h1>
 
     <div class="container mx-auto flex space-x-5 justify-center m-5">
@@ -68,7 +68,7 @@ function changeLocation3 ( newLocation3 ) {
   <section class="container mx-auto flex items-center flex-col">
 
     <h1 class="text-center text-2xl py-10">
-      Events & Reactivity in Vue.js <u><b>with ref() method</b></u> for single value (part 2)
+      Events & Reactivity in Vue.js <u><b>with ref() method</b></u> for single value (part-2)
     </h1>
 
     <div class="container mx-auto flex space-x-5 justify-center m-5">
@@ -97,7 +97,7 @@ function changeLocation3 ( newLocation3 ) {
   <section class="container mx-auto flex items-center flex-col">
 
     <h1 class="text-center text-2xl py-10">
-      Events & Reactivity in Vue.js <u><b>with reactive() method</b></u> for object (part 3)
+      Events & Reactivity in Vue.js <u><b>with reactive() method</b></u> for object (part-3)
     </h1>
 
     <div class="container mx-auto flex space-x-5 justify-center m-5">
