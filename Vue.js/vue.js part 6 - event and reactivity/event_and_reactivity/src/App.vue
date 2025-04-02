@@ -4,7 +4,7 @@ const location1 = 'Dhaka';
 
 function changeLocation1 ( newLocation1 ) {
   alert( 'Button Clicked ' + newLocation1 );
-}
+};
 
 
 // now let's make it reactive a single value with 'ref()'
@@ -15,7 +15,7 @@ const location2 = ref( 'Dhaka' );
 function changeLocation2 ( newLocation2 ) {
   alert( `Button Clicked ${ newLocation2 }` );
   location2.value = newLocation2;
-}
+};
 
 // now let's make it reactive a object with 'reactive()'
 import { reactive } from 'vue';
@@ -24,12 +24,12 @@ const location3 = reactive( {
   name: 'Dhaka',
   country: 'Bangladesh',
   weather: 'sunny'
-} )
+} );
 
 function changeLocation3 ( newLocation3 ) {
   alert( `Button Clicked ${ newLocation3 }` );
   location3.name = newLocation3;
-}
+};
 </script>
 
 <template>
