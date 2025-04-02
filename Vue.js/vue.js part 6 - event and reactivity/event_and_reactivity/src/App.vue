@@ -107,4 +107,5 @@ function changeLocation3 ( newLocation3 ) {
     </div>
     <h1 class="text-2xl m-10">Current Location is {{ location3.name }}</h1>
   </section>
+
 </template>
