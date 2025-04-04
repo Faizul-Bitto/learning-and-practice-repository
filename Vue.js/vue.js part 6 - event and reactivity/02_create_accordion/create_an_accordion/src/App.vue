@@ -1,6 +1,4 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
   <section class="container mx-auto flex items-center flex-col">
@@ -13,8 +11,8 @@
             Several Windows stacked on each other
           </h3>
           <p class="text-sm font-light text-gray-600 my-3">
-            The accordion is a graphical control element comprising a
-            vertically stacked list of items such as labels or thumbnails
+            The accordion is a graphical control element comprising a vertically
+            stacked list of items such as labels or thumbnails
           </p>
 
           <div class="h-1 w-full mx-auto border-b my-5"></div>
@@ -29,10 +27,10 @@
             <!-- Content -->
             <div class="px-5 pt-0 text-left pb-5">
               <p class="leading-6 font-light pl-9">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Sequi dolor dolorum odio, saepe quibusdam iusto possimus
-                nesciunt dolores assumenda quae totam, doloremque odit. Itaque
-                cum animi, labore debitis deserunt iusto!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
+                dolor dolorum odio, saepe quibusdam iusto possimus nesciunt
+                dolores assumenda quae totam, doloremque odit. Itaque cum animi,
+                labore debitis deserunt iusto!
               </p>
             </div>
           </div>
@@ -48,9 +46,9 @@
             <div class="accordion-content px-5 pt-0 text-left pb-5">
               <p class="leading-6 font-light pl-9">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut
-                suscipit itaque, sequi incidunt ab sit optio debitis
-                dignissimos doloribus ratione nobis id mollitia maiores
-                eveniet necessitatibus dolorum praesentium! Corrupti, at.
+                suscipit itaque, sequi incidunt ab sit optio debitis dignissimos
+                doloribus ratione nobis id mollitia maiores eveniet
+                necessitatibus dolorum praesentium! Corrupti, at.
               </p>
             </div>
           </div>
@@ -65,10 +63,9 @@
             <!-- Content -->
             <div class="accordion-content px-5 pt-0 text-left pb-5">
               <p class="leading-6 font-light pl-9">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Minima facilis labore voluptates provident nam, delectus
-                suscipit nihil optio voluptate quae porro fugiat magni
-                excepturi doloribus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+                facilis labore voluptates provident nam, delectus suscipit nihil
+                optio voluptate quae porro fugiat magni excepturi doloribus.
               </p>
             </div>
           </div>
@@ -83,11 +80,10 @@
             <!-- Content -->
             <div class="accordion-content px-5 pt-0 text-left pb-5">
               <p class="leading-6 font-light pl-9">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ullam minima maiores magni dolore qui architecto pariatur
-                incidunt repellat quos hic? Eius, eveniet accusantium!
-                Quisquam, quo. Vitae ipsum ad veritatis commodi quasi
-                expedita!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+                minima maiores magni dolore qui architecto pariatur incidunt
+                repellat quos hic? Eius, eveniet accusantium! Quisquam, quo.
+                Vitae ipsum ad veritatis commodi quasi expedita!
               </p>
             </div>
           </div>
