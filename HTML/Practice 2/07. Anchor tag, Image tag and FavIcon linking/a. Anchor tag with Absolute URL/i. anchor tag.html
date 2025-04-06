@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Anchor Tag</title>
+  </head>
+
+  <body>
+    <!-- 
+    These are anchor (<a>) tags that demonstrate different values of the 'target' attribute:
+
+      - _blank   → Opens the link in a new tab or window.
+      - _self    → Opens the link in the same tab (default behavior).
+      - _parent  → Opens the link in the parent frame (used when inside iframes).
+      - _top     → Opens the link in the full window, breaking out of all frames.
+
+    All links point to Faizul Bitto's GitHub profile.
+
+    Since these links include the full URL (with https://), they are considered **absolute URLs**, meaning they point to a resource on a different website or domain.
+    -->
+    <a
+      href="https://github.com/Faizul-Bitto"
+      target="_blank"
+      title="GitHub Profile"
+      >Faizul Bitto's Github Profile (opens in new tab)
+    </a>
+
+    <br />
+
+    <a
+      href="https://github.com/Faizul-Bitto"
+      target="_self"
+      title="GitHub Profile"
+      >Faizul Bitto's Github Profile (opens in same tab)
+    </a>
+
+    <br />
+
+    <a
+      href="https://github.com/Faizul-Bitto"
+      target="_parent"
+      title="GitHub Profile"
+      >Faizul Bitto's Github Profile (opens in parent frame)
+    </a>
+
+    <br />
+
+    <a
+      href="https://github.com/Faizul-Bitto"
+      target="_top"
+      title="GitHub Profile"
+      >Faizul Bitto's Github Profile (opens in top frame)
+    </a>
+  </body>
+</html>
