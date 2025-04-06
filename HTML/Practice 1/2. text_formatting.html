@@ -48,9 +48,18 @@
 
     <!-- subscript is a character (such as a number or letter) that is set slightly below of the normal line of type -->
     <sub>John Doe</sub>
+    <p>H<sub>2</sub>O</p>
 
     <!-- superscript is a character (such as a number or letter) that is set slightly above of the normal line of type -->
-    <sup>John Doe</sup>
+    <sup>John Doe</sup><br />
+    <p>(a+b)<sup>2</sup> = a<sup>2</sup>+2ab+b<sup>2</sup></p>
+    <br />
+    <p>
+      a
+      <sup
+        >b <sup>c <sup>d </sup> </sup>
+      </sup>
+    </p>
 
     <!-- line break tag -->
     <br />
@@ -67,5 +76,17 @@
       >If you want to know what a man's like, take a good look at how he treats
       his inferiors, not his equals.
     </q>
+
+    <!-- abbr tag -> to show the abbreviation in the webpage, with the title attribute to show the full name of the abbreviation. On mouse cursor hovering on the abbreviation, it will show the full name -->
+    <p>I live in <abbr title="Bangladesh">BD.</abbr></p>
+
+    <!-- address tag -> to show the address in the webpage. It will be seen that, the text is in italic form -->
+    <address>Dhaka, Bangladesh</address>
+
+    <!-- cite tag -> it will be seen in italic form -->
+    <cite>John Doe</cite><br />
+
+    <!-- bdo tag with dir="rtl"/right-to-left attribute. It will reverse the text -->
+    <bdo dir="rtl">John Doe</bdo>
   </body>
 </html>
