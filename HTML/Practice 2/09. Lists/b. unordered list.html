@@ -6,11 +6,38 @@
     <title>Unordered List</title>
   </head>
   <body>
+    <!-- 
+    This is an unordered list (<ul>) where each item is marked with a square bullet.
+
+      - 'type="square"' sets the bullet style to square.
+      - 'type="circle"' sets the bullet style to circle.
+      - <li> tags define each list item.
+
+    Other possible types are: 'disc' (default), 'circle', and 'square'.
+    -->
+    <ul type="circle">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul>
+
     <ul type="square">
       <li>Item 1</li>
       <li>Item 2</li>
       <li>Item 3</li>
       <li>Item 4</li>
+    </ul>
+
+    <ul type="square">
+      <li>Rice</li>
+      <li>Dal</li>
+      <li>Meat</li>
+      <ul type="circle">
+        <li>Chicken</li>
+        <li>Beef</li>
+      </ul>
+      <li>Oil</li>
     </ul>
   </body>
 </html>
