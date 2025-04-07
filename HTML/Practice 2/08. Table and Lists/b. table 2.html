@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+  </head>
+  <body>
+    <!-- 
+    This table displays average height, width, and red eye percentages for males and females.
+
+      - <caption> adds a title to the table.
+      - <th colspan="2"> merges two columns for the "Average" heading.
+      - <th rowspan="2"> merges two rows vertically for "Red Eyes".
+      - <td> contains the actual data cells.
+
+    The structure helps create a multi-level header with properly aligned data.
+    -->
+    <table border="1">
+      <caption>
+        <b>A Test Table</b>
+      </caption>
+
+      <!-- now we have to work with rows -->
+
+      <tr>
+        <th rowspan="2"></th>
+        <th colspan="2">Average</th>
+        <th rowspan="2">Red Eyes</th>
+      </tr>
+
+      <tr>
+        <td>Height</td>
+        <td>Width</td>
+      </tr>
+
+      <tr>
+        <td>Male</td>
+        <td>1.9</td>
+        <td>0.33</td>
+        <td>40%</td>
+      </tr>
+
+      <tr>
+        <td>Female</td>
+        <td>1.7</td>
+        <td>0.3</td>
+        <td>43%</td>
+      </tr>
+    </table>
+  </body>
+</html>
