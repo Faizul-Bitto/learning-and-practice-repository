@@ -2,10 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- Ensures the website is responsive across all device widths -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Audio</title>
   </head>
   <body>
-    <audio controls src="./music/audio.mp3"></audio>
+    <!-- Extra line breaks to push audio player down the page -->
+    <!-- (Optional: This is not a recommended method in production) -->
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <!-- 
+      <audio>: HTML5 element used to embed and play audio files.
+
+      Attributes used:
+      - controls: displays audio controls like play, pause, volume, etc.
+      - autoplay: starts playing the audio automatically when the page loads.
+      - muted: ensures the audio is muted on load (required for autoplay to work in modern browsers).
+      - src: the source path of the audio file to play (can be local or external).
+      
+      Note: For better browser support, using <source> tag inside <audio> is recommended.
+    -->
+    <audio controls autoplay muted src="./music/audio.mp3"></audio>
   </body>
 </html>

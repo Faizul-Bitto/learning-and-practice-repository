@@ -6,35 +6,185 @@
     <title>Form</title>
   </head>
   <body>
-    <label for="">User name:</label>
-    <input type="text" /><br /><br />
+    <!-- fieldset: groups related form elements together with a visible border -->
+    <fieldset>
+      <!-- legend: provides a caption or title for the fieldset -->
+      <legend>Registration Form</legend>
+      <br />
 
-    <label for="">Password:</label>
-    <input type="password" /><br /><br />
+      <!-- 
+        form: defines a form.
+        - 'action' specifies the URL where form data will be submitted
+        - 'method' defines the HTTP method (e.g., 'post' sends data in body)
+      -->
+      <form action="/submit" method="post">
+        <!-- 
+          label: provides a descriptive text for input.
+          - 'for' must match the 'id' of the input field
+          - Improves accessibility (screen readers) and UX (clicking label focuses input)
+        -->
+        <label for="username">User name:</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          required
+          autofocus
+          placeholder="Enter your username"
+        />
+        <br /><br />
 
-    <label for="">Age:</label>
-    <input type="number" /><br /><br />
+        <!-- Password input with placeholder -->
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          placeholder="Enter your password"
+        />
+        <br /><br />
 
-    <label for="">Email:</label>
-    <input type="email" /><br /><br />
+        <!-- Numeric age input -->
+        <label for="age">Age:</label>
+        <input
+          type="number"
+          id="age"
+          name="age"
+          required
+          placeholder="Enter your age"
+        />
+        <br /><br />
 
-    <label for="">Male</label>
-    <input type="radio" /><br /><br />
-    <label for="">Female</label>
-    <input type="radio" /><br /><br /><br /><br />
+        <!-- Email field with placeholder -->
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Enter your email address"
+        />
+        <br /><br />
 
-    <label for="">Male</label>
-    <input type="checkbox" /><br /><br />
-    <label for="">Female</label>
-    <input type="checkbox" /><br /><br /><br /><br />
+        <!-- Gender radio options -->
+        <label for="gender-male">Male</label>
+        <input
+          type="radio"
+          id="gender-male"
+          name="gender"
+          value="male"
+          required
+        />
 
-    <select name="" id="">
-      <option value="">Choose City</option>
-      <option value="">Dhaka</option>
-      <option value="">Rangpur</option>
-      <option value="">Sylhet</option></select
-    ><br /><br /><br /><br />
+        <label for="gender-female">Female</label>
+        <input
+          type="radio"
+          id="gender-female"
+          name="gender"
+          value="female"
+          required
+        />
+        <br /><br /><br />
 
-    <button>Submit</button>
+        <!-- Interests checkboxes -->
+        <label for="interest-readingBooks">Interested in Reading Books</label>
+        <input
+          type="checkbox"
+          id="interest-readingBooks"
+          name="interest"
+          value="readingBooks"
+        /><br />
+
+        <label for="interest-playingVideoGames"
+          >Interested in Playing Video Games</label
+        >
+        <input
+          type="checkbox"
+          id="interest-playingVideoGames"
+          name="interest"
+          value="playingVideoGames"
+        /><br />
+
+        <label for="interest-traveling">Interested in Traveling</label>
+        <input
+          type="checkbox"
+          id="interest-traveling"
+          name="interest"
+          value="traveling"
+        />
+        <br /><br /><br />
+
+        <!-- Range input (optional placeholder alternative: label) -->
+        <label for="range">Select your age (range):</label><br />
+        <input type="range" id="range" name="ageRange" min="10" max="100" />
+        <br /><br />
+
+        <!-- Color picker -->
+        <label for="color">Choose your favorite color:</label><br />
+        <input type="color" id="color" name="favColor" />
+        <br /><br /><br />
+
+        <!-- Date picker -->
+        <label for="dob">Date of Birth:</label><br />
+        <input type="date" id="dob" name="dob" required />
+        <br /><br /><br />
+
+        <!-- Time picker -->
+        <label for="apptTime">Preferred Appointment Time:</label><br />
+        <input type="time" id="apptTime" name="apptTime" />
+        <br /><br /><br />
+
+        <!-- Search input -->
+        <label for="search">Search:</label><br />
+        <input
+          type="search"
+          id="search"
+          name="searchQuery"
+          placeholder="Search something..."
+        />
+        <br /><br /><br />
+
+        <!-- URL input -->
+        <label for="url">Portfolio Website URL:</label><br />
+        <input
+          type="url"
+          id="url"
+          name="portfolio"
+          placeholder="https://yourportfolio.com"
+        />
+        <br /><br /><br />
+
+        <!-- File upload -->
+        <label for="resume">Upload your resume (PDF/DOC):</label><br />
+        <input type="file" id="resume" name="resumeFile" />
+        <br /><br /><br />
+
+        <!-- City dropdown -->
+        <label for="city">Choose your city:</label><br />
+        <select name="city" id="city" required>
+          <option value="">-- Select City --</option>
+          <option value="dhaka">Dhaka</option>
+          <option value="rangpur">Rangpur</option>
+          <option value="sylhet">Sylhet</option>
+        </select>
+        <br /><br /><br />
+
+        <!-- Textarea with placeholder -->
+        <label for="question">Do you have any questions for us?</label><br />
+        <textarea
+          name="question"
+          id="question"
+          cols="30"
+          rows="10"
+          placeholder="Type your question here..."
+        ></textarea>
+        <br /><br />
+
+        <!-- Submit and Reset buttons -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </fieldset>
   </body>
 </html>

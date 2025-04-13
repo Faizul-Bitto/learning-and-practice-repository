@@ -2,12 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- Ensures proper rendering on different devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Video</title>
   </head>
   <body>
+    <!-- 
+      <video>: HTML5 element to embed video files directly into the page.
+
+      Attributes used here:
+      - controls: displays default video controls like play, pause, volume, etc.
+      - autoplay: starts playing the video automatically when the page loads.
+      - muted: required with autoplay on most browsers; video must be muted to autoplay.
+      - src: the source of the video file; can be a local file or an online video URL.
+      - width & height: controls the size of the video player (in pixels).
+    -->
     <video
       controls
+      autoplay
+      muted
       src="https://videos.pexels.com/video-files/17554657/17554657-uhd_2560_1440_24fps.mp4"
       width="500px"
       height="500px"
