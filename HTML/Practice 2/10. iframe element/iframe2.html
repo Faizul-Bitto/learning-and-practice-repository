@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iframe element</title>
+  </head>
+  <body>
+    <p>
+      <b>
+        We can use an attribute called 'name' to give a name to the iframe
+      </b>
+    </p>
+
+    <br />
+    <br />
+
+    <p>
+      <b>
+        Let's say we want to embed another html file (relative URL) inside the
+        current webpage
+      </b>
+    </p>
+    <iframe
+      src="../10. iframe element/demo.html"
+      frameborder="2"
+      width="100%"
+      height="500px"
+      name="wikipedia"
+    ></iframe>
+
+    <br />
+
+    <a
+      href="https://www.mongodb.com/resources/languages/mern-stack"
+      target="wikipedia"
+      >MERN Stack Explained
+    </a>
+  </body>
+</html>
