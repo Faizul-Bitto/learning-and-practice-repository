@@ -1,0 +1,10 @@
+h1,
+h2,
+p,
+#paragraph,
+.h3-tag {
+  color: rgb(61, 61, 184);
+  background-color: rgb(82, 217, 172);
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
