@@ -26,3 +26,21 @@ h3{
     /* top, right, bottom, left individual value in one line*/
     margin: 150px 50px 50px 90px;
 }
+
+h4{
+    border: rgb(199, 191, 46) solid;
+
+    width: 50%;
+    
+    margin-right: auto;
+    margin-left: auto; 
+}
+
+h5{
+    border: rgb(208, 107, 25) solid;
+
+    width: 20%;
+
+    /* at once right and left */
+    margin: auto;
+}
