@@ -1,0 +1,24 @@
+.paragraph-tag1 {
+  color: aquamarine;
+  /* pre-defined color */
+  background-color: brown;
+  opacity: 0.5;
+}
+
+.paragraph-tag2 {
+  color: aquamarine;
+  /* RGB color */
+  background-color: rgb(36, 52, 154);
+}
+
+.paragraph-tag3 {
+  color: aquamarine;
+  /* RGB color */
+  background-color: rgba(36, 52, 154, 0.5);
+}
+
+.paragraph-tag4 {
+  color: aquamarine;
+  /* RGB color */
+  background-color: hsl(136, 74%, 21%);
+}
