@@ -9,12 +9,6 @@ body {
 
 
   /* as we can see, for changing background designs, we need to take different background properties and give values individually. But we can simply take a property called 'background' and simply define all the values we need. */
-/* background: url(https://e0.pxfuel.com/wallpapers/415/97/desktop-wallpaper-plain-lavender-for-gt-light-purple-gradient-background-px.jpg)
-no-repeat center fixed; */
-}
-
-body{
-  background: url(https://e0.pxfuel.com/wallpapers/415/97/desktop-wallpaper-plain-lavender-for-gt-light-purple-gradient-background-px.jpg)
-  no-repeat center fixed;
-  background-size: cover;
+background: url(https://e0.pxfuel.com/wallpapers/415/97/desktop-wallpaper-plain-lavender-for-gt-light-purple-gradient-background-px.jpg)
+no-repeat center fixed ;
 }
