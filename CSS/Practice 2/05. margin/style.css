@@ -1,0 +1,28 @@
+body{
+    margin: 10px;
+}
+
+h1{
+    border: aqua solid thick;
+    border-radius: 20px;
+    
+    /* top, right, bottom, left -> all side will take same margin at once */
+    margin: 50px;
+}
+
+h2{
+    border: rgb(178, 30, 168) solid;
+
+    /* individual value for each side separately, in different lies */
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+h3{
+    border: rgb(82, 46, 199) solid;
+
+    /* top, right, bottom, left individual value in one line*/
+    margin: 150px 50px 50px 90px;
+}
