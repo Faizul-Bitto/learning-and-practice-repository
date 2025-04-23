@@ -1,0 +1,44 @@
+.parent{
+    background-color: blueviolet;
+    position: static;
+    height: 100vw;
+}
+
+.child-one{
+    background-color: blue;
+    position: relative;
+    top: 50px;
+    right: 50px;
+}
+
+.child-two{
+    background-color: red;
+    position: fixed;
+    left: 60px;
+}
+
+.child-three{
+    background-color: green;
+    position: sticky;
+    top: 0;
+}
+
+.square{
+    background-color: green;
+    height: 800px;
+    width: 1890px;
+    position: relative;
+}
+
+.oval{
+    background-color: red;
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+}

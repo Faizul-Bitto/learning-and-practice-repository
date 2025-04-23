@@ -1,0 +1,14 @@
+.parent{
+    background-color: yellow;
+    padding: 10px 5%;
+    height: 200px;
+    width: 90%;
+    overflow: auto;
+    float: right;
+}
+
+img{
+    float: inherit;
+    height: 250px;
+    padding: 10px;
+}
