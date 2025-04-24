@@ -1,0 +1,30 @@
+a[target] {
+  color: red;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+a[target="_blank"] {
+  color: green;
+}
+
+p[class~="paragraph0"] {
+  color: rgb(9, 255, 0);
+}
+
+p[class|="paragraph"] {
+  color: blue;
+}
+
+/* p[class^="paragraph"] {
+  color: rgb(16, 134, 147);
+} */
+
+p[class$="1"] {
+  color: rgb(194, 191, 24);
+}
+
+p[class*="agr"] {
+  color: rgb(194, 191, 24);
+}

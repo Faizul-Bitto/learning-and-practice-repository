@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+.form-design {
+  background-color: aliceblue;
+  padding: 30px;
+  overflow: hidden;
+}
+
+.form-design input,
+select {
+  width: 100%;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-design input:focus {
+  outline: 1px solid #04aa6d;
+}
+
+.form-design textarea {
+  height: 200px;
+  width: 100%;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+.form-design textarea:focus {
+  outline: 1px solid #04aa6d;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  background-color: #075337;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #4a8d08;
+}
