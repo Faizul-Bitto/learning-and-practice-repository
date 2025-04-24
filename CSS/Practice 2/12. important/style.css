@@ -1,0 +1,24 @@
+/* specificity value of an element = 1 ( low priority ) */
+/* specificity value of a class = 10 ( higher priority than an element/html ) */
+/* specificity value of an id = 100 ( higher priority than the class ) */
+/* specificity value of an inline css = 1000 ( highest priority ) */
+
+/* here p is a html tag/element, so here it's specificity value = 1 */
+p {
+  color: green !important;
+}
+
+/* same tag twice/thrice/whatever -> will prioritize the last */
+p {
+  color: blue;
+}
+
+/* here .paragraph is a class, so here it's specificity value = 10, but as it is with a p tag so it's specificity value is ( (p = 1) + (.paragraph = 10 = 11) */
+p.paragraph {
+  color: blueviolet !important;
+}
+
+/* here #paragraph is an id, so here it's specificity value = 100, but as it is with a p tag so it's specificity value is ( (p = 1) + (.paragraph = 100 = 101) */
+p#paragraph {
+  color: brown !important;
+}
