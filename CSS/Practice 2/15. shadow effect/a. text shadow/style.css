@@ -1,0 +1,30 @@
+/* 2px 2px means -> give shadow to -> right and below */
+h1:nth-child(1) {
+  text-shadow: 2px 2px;
+}
+
+/* 2px 2px means -> give shadow to -> left and up */
+h1:nth-child(2) {
+  text-shadow: -3px -3px;
+}
+
+/* 2px 2px red means -> give red color shadow to -> right and below */
+h1:nth-child(3) {
+  text-shadow: 2px 2px red;
+}
+
+/* 2px 2px 5px red means -> give 5px blurry red color shadow to -> right and below */
+h1:nth-child(4) {
+  text-shadow: 5px 5px 5px red;
+}
+
+/* 2px 2px 5px red means -> give 5px blurry red color shadow to -> exact in the middle of the text */
+h1:nth-child(5) {
+  text-shadow: 0px 0px 5px red;
+}
+
+/* multiple shadows */
+/* 2px 2px 5px red means -> give 5px blurry red color shadow to -> right and below & -2px -2px 5px blue means -> give 5px blurry blue color shadow to -> left and up */
+h1:nth-child(6) {
+  text-shadow: 2px 2px 5px red, -2px -2px 5px blue;
+}

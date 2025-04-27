@@ -1,0 +1,97 @@
+/* 2d transforms */
+.transform_1 {
+  width: 200px;
+  height: 200px;
+  border: 5px solid green;
+
+  /* if we want to move the element, we can use translate. It will work like x-axis and y-axis */
+  transform: translate(100px, 100px);
+}
+
+.transform_2 {
+  width: 200px;
+  height: 200px;
+  border: 5px solid green;
+
+  /* if we want to move the element to the X-axis only, we can use translateX */
+  transform: translateX(50px);
+}
+
+/* rotate the element */
+.transform_3 {
+  width: 500px;
+  height: 200px;
+  border: 5px solid green;
+
+  /* if we want to rotate the element */
+  transform: rotate(40deg);
+}
+
+.transform_4 {
+  width: 200px;
+  height: 200px;
+  border: 5px solid green;
+
+  transform: scale(2, 3);
+}
+
+.transform_5 {
+  width: 200px;
+  height: 200px;
+  border: 5px solid green;
+
+  /* if we want to move the element to the X-axis only, we can use scaleX */
+  transform: scaleX(2);
+}
+
+.transform_6 {
+  width: 200px;
+  height: 200px;
+  border: 5px solid green;
+
+  /* if we want to move the element to the Y-axis only, we can use scaleY */
+  transform: scaleY(2);
+}
+
+.transform_6 {
+  width: 200px;
+  height: 200px;
+  border: 5px solid green;
+
+  transform: skew(70deg);
+}
+
+.transform_7 {
+  width: 200px;
+  height: 200px;
+  border: 5px solid green;
+
+  transform: skewX(45deg);
+}
+
+.transform_8 {
+  width: 200px;
+  height: 200px;
+  border: 5px solid green;
+
+  transform: skewY(45deg);
+}
+
+/* matrix */
+/* matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+.transform_9 {
+  width: 200px;
+  height: 200px;
+  border: 5px solid green;
+
+  transform: matrix(1, 2, 3, 4, 5, 6);
+}
+
+/* 3d transforms */
+.transform_10 {
+  width: 200px;
+  height: 200px;
+  border: 5px solid green;
+
+  transform: rotate3d(1, 1, 1, 45deg);
+}

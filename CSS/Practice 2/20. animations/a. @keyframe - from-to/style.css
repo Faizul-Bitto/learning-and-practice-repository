@@ -1,0 +1,21 @@
+div {
+  width: 200px;
+  height: 200px;
+  background-color: brown;
+  text-align: center;
+
+  animation-name: demo-animation;
+  animation-duration: 2s;
+  /* animation-iteration-count: 4; */
+  animation-iteration-count: infinite;
+}
+
+/* to set the animation, we have to use a property named '@keyframes' */
+@keyframes demo-animation {
+  from {
+    background-color: brown;
+  }
+  to {
+    background-color: green;
+  }
+}

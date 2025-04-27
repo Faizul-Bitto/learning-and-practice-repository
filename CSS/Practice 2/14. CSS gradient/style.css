@@ -1,0 +1,146 @@
+/* linear gradient */
+/* top to bottom -> meaning -> first red, then yellow */
+.banner1 {
+  background-color: gray;
+  width: 100%;
+  height: 875px;
+
+  background-image: linear-gradient(red, yellow);
+}
+
+/* if we want to make left to right, not top to bottom */
+.banner2 {
+  background-color: gray;
+  width: 100%;
+  height: 875px;
+
+  background-image: linear-gradient(to right, red, yellow);
+}
+
+/* if we want to make right to left, not top to bottom */
+.banner3 {
+  background-color: gray;
+  width: 100%;
+  height: 875px;
+
+  background-image: linear-gradient(to left, red, yellow);
+}
+
+/* if we want to make top to bottom left */
+.banner4 {
+  background-color: gray;
+  width: 100%;
+  height: 875px;
+
+  background-image: linear-gradient(to bottom left, red, yellow);
+}
+
+/* if we want to make bottom to top left */
+.banner5 {
+  background-color: gray;
+  width: 100%;
+  height: 875px;
+
+  background-image: linear-gradient(to top left, red, yellow);
+}
+
+/* use of degree */
+.banner5 {
+  background-color: gray;
+  width: 100%;
+  height: 875px;
+
+  background-image: linear-gradient(180deg, red, yellow);
+}
+
+.banner6 {
+  background-color: gray;
+  width: 100%;
+  height: 875px;
+
+  background-image: linear-gradient(90deg, red, yellow);
+}
+
+.banner7 {
+  background-color: gray;
+  width: 100%;
+  height: 875px;
+
+  background-image: linear-gradient(360deg, red, yellow);
+}
+
+.banner8 {
+  background-color: gray;
+  width: 100%;
+  height: 875px;
+
+  background-image: linear-gradient(red, yellow, green);
+}
+
+.banner9 {
+  width: 100%;
+  height: 875px;
+
+  background-image: linear-gradient(
+    rgba(255, 10, 174, 0.5),
+    rgba(0, 0, 255, 0.5)
+  );
+}
+
+.banner10 {
+  width: 100%;
+  height: 875px;
+
+  background-image: repeating-linear-gradient(red, yellow 10%, green 30%);
+}
+
+/* radial gradient */
+.banner11 {
+  width: 100%;
+  height: 875px;
+
+  background-image: radial-gradient(red, yellow 10%, green 30%);
+}
+
+.banner12 {
+  width: 100%;
+  height: 875px;
+
+  background-image: radial-gradient(
+    farthest-side at 60% 55%,
+    red,
+    yellow 10%,
+    green 30%
+  );
+}
+
+/* conic gradient */
+.banner13 {
+  width: 100%;
+  height: 875px;
+
+  background-image: conic-gradient(
+    red,
+    yellow 10%,
+    green 30%,
+    blue 50%,
+    black 70%
+  );
+}
+
+#conic-gradient {
+  width: 100%;
+  height: 875px;
+
+  background-image: conic-gradient(
+    red 0deg,
+    red 90deg,
+    yellow 90deg,
+    yellow 180deg,
+    green 180deg,
+    green 270deg,
+    blue 270deg
+  );
+
+  border-radius: 50%;
+}

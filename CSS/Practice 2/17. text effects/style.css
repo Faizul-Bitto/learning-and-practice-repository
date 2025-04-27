@@ -1,0 +1,33 @@
+.paragraph_1 {
+  width: 250px;
+  border: 2px solid black;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.paragraph_2 {
+  width: 250px;
+  border: 2px solid black;
+  word-wrap: none;
+}
+
+.paragraph_3 {
+  width: 250px;
+  border: 2px solid black;
+  word-wrap: break-word;
+}
+
+.paragraph_4 {
+  width: 250px;
+  border: 2px solid black;
+  word-break: break-all;
+}
+
+.h3_1 {
+  writing-mode: horizontal-tb;
+}
+
+.h3_2 {
+  writing-mode: vertical-rl;
+}
