@@ -22,7 +22,7 @@
 
 .item-2 {
   background-color: green;
-  order: 1;
+  /* order: 1; */
 }
 
 .item-3 {
@@ -76,10 +76,10 @@
   /* justify-content: space-between; */
   /* justify-content: space-evenly; */
   /* justify-content: baseline; */
-  /* justify-content: center; */
+  justify-content: center;
 
-  /* for 'flex-direction: row' -> with 'align-items' we align with main axis or x-axis,
-    for 'flex-direction: column' -> with 'align-items' we align with cross axis or y-axis
+  /* for 'flex-direction: row' -> with 'align-items' we align with cross axis or y-axis,
+    for 'flex-direction: column' -> with 'align-items' we align with main axis or x-axis
    */
   /* align-items: flex-end; */
   /* align-items: baseline; */
@@ -87,6 +87,7 @@
 
   /* flex-wrap: nowrap; */
   /* flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 2em; */
+  /* align-items: flex-start; */
+  align-items: center;
+  gap: 2em;
 }
